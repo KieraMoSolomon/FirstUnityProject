@@ -2,6 +2,17 @@
 using System.Collections;
 
 public class variablesAndOperators : MonoBehaviour {
+	/*The math operators are
+	 * + addition 3 + 4 -> 7
+	 * - subtraction 4 - 3 -> 1
+	 * * multiplcation 4 * 3 -> 12
+	 * this is / division 6 / 2 -> 3
+	 * % modulus 7 / 3 -> 1
+	 * ++ increments 5 ++ -> 6
+	 * -- decrements 5 -- -> 4
+	 * = is for assigning int num1 = 5
+	 * () can be used for doing math in a project, it groups things together.
+	*/
 	private float pi = 3.1415f;
 	private float radius = 2.5f;
 	private float length = 3f;
