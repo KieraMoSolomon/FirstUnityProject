@@ -4,7 +4,7 @@ using System.Collections;
 public class ifStatements : MonoBehaviour {
 	private float A = 3.0f;
 	private int B = 3;
-
+	private string name = "Hope";
 	/*
 	 * ==
 	 * !=
@@ -15,6 +15,9 @@ public class ifStatements : MonoBehaviour {
 	 */
 	// Use this for initialization
 	void Start () {
+		if (name != "Austin") {
+			print (name);
+		}
 		if (A == B){
 			print ("A is equal to B");
 		}
