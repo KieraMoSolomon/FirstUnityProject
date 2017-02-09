@@ -5,6 +5,8 @@ public class ifStatements : MonoBehaviour {
 	private float A = 3.0f;
 	private int B = 3;
 	private string name = "Hope";
+	private bool awake = false;
+
 	/*
 	 * ==
 	 * !=
@@ -15,6 +17,13 @@ public class ifStatements : MonoBehaviour {
 	 */
 	// Use this for initialization
 	void Start () {
+		if (awake != true){
+			print ("WAKE UP!");
+			awake = true;
+		}
+		if (awake == true){
+			print("Go to sleep!");
+		}
 		if (name != "Austin") {
 			print (name);
 		}
