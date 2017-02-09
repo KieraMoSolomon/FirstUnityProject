@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ifStatements : MonoBehaviour {
-	private int A = 3;
+	private float A = 3.0f;
 	private int B = 3;
 
 	/*
