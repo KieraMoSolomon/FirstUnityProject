@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ifStatements : MonoBehaviour {
-	private int A = 10;
+	private int A = 3;
 	private int B = 3;
 
 	/*
