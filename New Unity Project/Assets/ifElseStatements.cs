@@ -2,14 +2,14 @@
 using System.Collections;
 
 public class ifElseStatements : MonoBehaviour {
-	private bool awake = false;
+	private int time = 15;
 	// Use this for initialization
 	void Start () {
-		if (awake == false) {
-			print ("WAKE UP!");
-		}
+		if (time >= 18) {
+			print ("Go home!");
+		} 
 		else {
-			print ("Go to sleep!");
+			print ("Back to work slogothor!");
 		}
 
 	}
