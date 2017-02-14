@@ -2,14 +2,18 @@
 using System.Collections;
 
 public class ifElseStatements : MonoBehaviour {
-	private int time = 15;
+	private float grade;
+
 	// Use this for initialization
 	void Start () {
-		if (time >= 18) {
-			print ("Go home!");
+		if (grade > 90) {
+			print ("A");
 		} 
-		else {
-			print ("Back to work slogothor!");
+		else if (grade > 80) {
+			print ("B");
+		}
+		else if (grade > 70) {
+			print ("C");
 		}
 
 	}
