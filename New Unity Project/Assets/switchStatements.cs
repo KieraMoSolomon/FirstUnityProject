@@ -36,7 +36,7 @@ public class switchStatements : MonoBehaviour {
 			break;
 		default:
 			health = 100;
-			phrase2 = "no monsters came"
+			phrase2 = "no monsters came";
 				break;
 		}
 		if (health <= 100) {
