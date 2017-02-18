@@ -2,6 +2,10 @@
 using System.Collections;
 
 public class switchStatements : MonoBehaviour {
+	//Switch statements are useful when you have various 
+	//options that are posible for your code to work.
+	//They have a variable they look at and then if the variable 
+	//changes it has different outputs that can happen or has the default.
 	private int time = 10;
 	private string animal = "alligator";
 	private string phrase;
@@ -16,7 +20,14 @@ public class switchStatements : MonoBehaviour {
 	private string season = "summer";
 	private string phrase3;
 	private bool garden = true;
-	//
+	//television shows
+	private string goodShows = "Kim Possible";
+	private string phrase4;
+	private bool tvshow = true;
+	//Drinks
+	private string soda = "Dr Pepper";
+	private string phrase5;
+	private bool drink = true;
 
 
 	// Use this for initialization
@@ -48,7 +59,7 @@ public class switchStatements : MonoBehaviour {
 			print ("We are out of stock of those");
 			break;
 		case "doll":
-			print ("Making more as we speak");
+			print ("Making more dolls as we speak");
 			break;
 		default:
 			print ("You can make a request for a toy here");
@@ -71,6 +82,36 @@ public class switchStatements : MonoBehaviour {
 		}
 		if (garden){
 			print (phrase3);
+		}
+
+		switch (goodShows){
+		case "PowerPuff Girls":
+			phrase4 = "The Powerpuff Girls is a fantastic show.";
+			break;
+		case "Kim Possible":
+			phrase4 = "Kim Possible is the greatest show ever!";
+			break;
+		default:
+			phrase4 = "Your opinion is not valid";
+			break;
+		}
+		if (tvshow) {
+			print (phrase4);
+		}
+
+		switch (soda){
+		case "Dr Pepper":
+			phrase5 = "You really should drink water";
+			break;
+		case "Pepsi":
+			phrase5 = "Pepsi is not good for you";
+			break;
+		default:
+			phrase5 = "Water is the best option for you to drink";
+			break;
+		}
+		if (drink) {
+			print (phrase5);
 		}
 
 		switch (animal) 
