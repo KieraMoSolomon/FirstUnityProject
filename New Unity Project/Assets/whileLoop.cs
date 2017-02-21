@@ -7,7 +7,10 @@ public class whileLoop : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		while (bottlesOfPop < maxBottles) {
-			print (bottlesOfPop + " bottles of Pop on the wall.");
+			if (bottlesOfPop % 2 == 0) {
+				print (bottlesOfPop + " bottles of Pop on the wall.");
+			}
+
 			bottlesOfPop = bottlesOfPop + 2;
 		}
 		print ("All done");
