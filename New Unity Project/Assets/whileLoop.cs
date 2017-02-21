@@ -2,14 +2,13 @@
 using System.Collections;
 
 public class whileLoop : MonoBehaviour {
-
+	public int bottlesOfPop = 0;
 	// Use this for initialization
 	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		while (bottlesOfPop < 10) {
+			print (bottlesOfPop + " bottles of Pop on the wall.");
+			bottlesOfPop++;
+		}
+		print ("All done");
 	}
 }
