@@ -2,10 +2,11 @@
 using System.Collections;
 
 public class whileLoop : MonoBehaviour {
-	public int bottlesOfPop = 0;
+	private int bottlesOfPop = 0;
+	public int maxBottles = 10;
 	// Use this for initialization
 	void Start () {
-		while (bottlesOfPop < 10) {
+		while (bottlesOfPop < maxBottles) {
 			print (bottlesOfPop + " bottles of Pop on the wall.");
 			bottlesOfPop++;
 		}
