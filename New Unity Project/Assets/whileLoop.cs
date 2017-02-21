@@ -12,7 +12,8 @@ public class whileLoop : MonoBehaviour {
 			print (bottlesOfPop + " bottles of Pop on the wall.");
 			bottlesOfPop++;
 			if (bottlesOfPop == maxBottles) {
-				gameOn = false;
+				break;
+				//terrminates the loop without changing the value of the variable
 			}
 		}
 
