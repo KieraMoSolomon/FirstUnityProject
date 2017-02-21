@@ -8,7 +8,7 @@ public class whileLoop : MonoBehaviour {
 	void Start () {
 		while (bottlesOfPop < maxBottles) {
 			print (bottlesOfPop + " bottles of Pop on the wall.");
-			bottlesOfPop++;
+			bottlesOfPop = bottlesOfPop + 2;
 		}
 		print ("All done");
 	}
