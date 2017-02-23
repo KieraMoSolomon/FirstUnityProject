@@ -19,7 +19,8 @@ public class array : MonoBehaviour {
 	void Start () {
 
 		print ("Sleeping Beauty was having a very good dream. It was so " + adj1[Random.Range(0, adj1.Length)] + " that she was giggling in her sleep. " +
-			"\n A fluffy kitty and a " + adj2[Random.Range(0, adj2.Length)] + " " + animal[Random.Range(0, animal.Length)] + " were surfing on a sea of " + liquid[Random.Range(0, liquid.Length)] + ". They crashed onto the " + adj3[Random.Range(0, adj3.Length)] + " beach and started doing\n an upbeat dance to their very favorite song, " + song[Random.Range(0, song.Length)] + ". Then, they drove a pink " + noun1[Random.Range(0, noun1.Length)] + 
+			"\n A fluffy kitty and a " + adj2[Random.Range(0, adj2.Length)] + " " + animal[Random.Range(0, animal.Length)] + " were surfing on a sea of " + liquid[Random.Range(0, liquid.Length)] + ". They crashed onto the " + adj3[Random.Range(0, adj3.Length)] + " beach and started doing" +
+			"\n an upbeat dance to their very favorite song, " + song[Random.Range(0, song.Length)] + ". Then, they drove a pink " + noun1[Random.Range(0, noun1.Length)] + 
 			"\n down the " + adj4[Random.Range(0, adj4.Length)] + " road to the " + place[Random.Range(0, place.Length)] + ". They ordered some pizza and " + food[Random.Range(0, food.Length)] + 
 			"\n for lunch. Kitty laughed and got " + food[Random.Range(0, food.Length)] + " all over her fur. Suddenly, Sleeping Beauty woke up! She had been " + verb[Random.Range(0, verb.Length)] + 
 			"\n by a " + adj5[Random.Range(0, adj5.Length)] + " prince.");
