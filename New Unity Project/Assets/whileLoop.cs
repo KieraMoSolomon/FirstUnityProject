@@ -7,27 +7,33 @@ public class whileLoop : MonoBehaviour {
 
 	private bool gameOn = true;
 
-	private int minVal = -10;
-	private int maxVal = 10;
+	private int minVal = -100;
+	private int maxVal = 100;
 	private int randomNum;
 	private int counter = 0;
+	private int secretNum = 77;
 	// Use this for initialization
 	void Start () {
 
-		while (true) {
+		while (randomNum != secretNum) {
 			randomNum = Random.Range (minVal, maxVal);
-			if (randomNum > 0) {
+			if (randomNum > secretNum) {
 				maxVal = randomNum;
 			} else if (randomNum < 0) {
 				minVal = randomNum;
 			}
 
 			counter++;
-			print ("Attempt " + counter + ": " + minVal + ": " + maxVal);
-			if (maxVal == 1 && minVal == -1) {
-				break;
-				//this has a condition that it needs to meet before breaking
+			if (randomNum != secretNum) {
+				print ("Attempt " + counter + ": secret number is not: " + randomNum);
 			}
+			else {
+				print ("Attempt " + counter + ": secret number is: " + randomNum);
+			}
+			//if (maxVal == 1 && minVal == -1) {
+				//break;
+				//this has a condition that it needs to meet before breaking
+			//}
 			//break; this would stop it after the first run through so we need a condition not a break
 		}
 
