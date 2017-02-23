@@ -15,7 +15,7 @@ public class whileTest : MonoBehaviour {
 			counter++;
 
 			if (guess == target) {
-				print ("attempt " + counter + ": You guessed the correct number, " + target);
+				print ("attempt " + counter + ": You guessed the correct number, " + target + ".");
 				break;
 			} 
 			else if (guess < target) {
