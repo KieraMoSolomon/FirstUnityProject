@@ -19,4 +19,20 @@ public class listHomework : MonoBehaviour {
 			}
 		}
 	}
+	public void RemoveAnimal()
+	{
+		if (animal != "") {
+			if (zooRoster.Contains (animal) == true) {
+				zooRoster.Remove (animal);
+			}
+		}
+	}
+	public void ClearAnimal()
+	{
+		
+	}
+	public void PrintAnimal ()
+	{
+		
+	}
 }
