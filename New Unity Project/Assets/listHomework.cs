@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class listHomework : MonoBehaviour {
+	private int i = 0;
 	public string animal;
 	public List<string> zooRoster = new List<string>();
 	// Use this for initialization
@@ -10,6 +11,7 @@ public class listHomework : MonoBehaviour {
 		zooRoster.Add ("monkey");
 		zooRoster.Add ("elephant");
 		zooRoster.Add ("alligator");
+		zooRoster.Add ("lion");
 	}
 	public void AddAnimal()
 	{
@@ -29,10 +31,16 @@ public class listHomework : MonoBehaviour {
 	}
 	public void ClearAnimal()
 	{
-		
+		while (i <= zooRoster.Count) {
+			zooRoster [i] = "";
+			i++;
+		}
 	}
 	public void PrintAnimal ()
 	{
-		
+		while (i < zooRoster.Count) {
+			print (zooRoster [i]);
+			i++;
+		}
 	}
 }
